@@ -1,0 +1,17 @@
+<h1>Game:</h1>
+<div>
+
+    <table class="Table">
+        <tr *ngFor="let filas of tab; index as i">
+            <td *ngFor="let celdas of filas; index as j" style="border: 1px solid black; width: 30px; height: 30px;" (click)="click_casilla(i, j)" class="Celda">
+                {{celdas}}
+            </td>
+        </tr>
+    </table> 
+</div>
+       
+
+<div *ngIf="juegoTerminado">Ganador, juego terminado</div>
+<div *ngIf="juegoEmpate">Empate, juego terminado</div>
+
+<button (click) = "vaciarTablero()" >REINICIAR</button>

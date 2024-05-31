@@ -1,0 +1,17 @@
+
+.Table{
+    
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+    border: 1px solid black;
+
+}
+
+
+.Celda{
+
+    border: 1px solid black; 
+    width: 30px; 
+    height: 30px;
+}
